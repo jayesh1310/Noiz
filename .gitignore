@@ -1,23 +1,75 @@
 # Dependencies
 node_modules/
+/.pnpm-store
+.npm
+.yarn/
 
-# Environment
+# Environment Variables
 .env
-*.env.local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+*.env
 
-# Build output
+# Production & Build Output
 dist/
+dist-ssr/
 build/
+*.out
 
-# OS files
-.DS_Store
-Thumbs.db
+# Vite & Bundler Cache
+.vite/
+.cache/
+.eslintcache
+.stylelintcache
 
-# Logs
+# Logs & Debugging
+logs/
 *.log
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# Uploads (user-generated content)
+# Testing & Code Coverage
+coverage/
+.nyc_output/
+
+# IDEs, Editors & Workspaces
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.sublime-workspace
+*.sublime-project
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Temporary & Backup Files
+tmp/
+temp/
+*.tmp
+*.bak
+
+# User Uploads & Media (ignore contents but keep directory via .gitkeep)
 uploads/songs/*
 uploads/thumbnails/*
 !uploads/songs/.gitkeep
